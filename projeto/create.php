@@ -33,10 +33,3 @@ if(isset($_POST['submit'])){
     exit();
 }
 ?>
-
-<form method="post" action="">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome">
-    <br>
-    <input type="submit" name="submit" value="Salvar">
-</form>
