@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário</title>
+    <title>Formulário PHP</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Formulário de Cadastro de Projetos</h1>
-      <form method="POST" action="/projeto/create.php">
-        <div class="form-group">
-          <label for="nome">Nome do Projeto:</label>
-          <input type="text" class="form-control" name="nome" id="nome" />
-        </div>
-        <button type="submit" name="submit" class="btn btn-primary">
-          Cadastrar
-        </button>
-      </form>
-    </div>
+    <form action="/functions/processa_form.php" method="post">
+      <label for="nome_projeto">Nome do projeto:</label>
+      <input type="text" id="nome_projeto" name="nome_projeto">
+      <button type="submit">Enviar</button>
+    </form>
   </body>
 </html>
