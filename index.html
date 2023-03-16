@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulário de Cadastro de Projetos</h1>
+      <form method="POST" action="/projeto/create.php">
+        <div class="form-group">
+          <label for="nome">Nome do Projeto:</label>
+          <input type="text" class="form-control" name="nome" id="nome" />
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary">
+          Cadastrar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
